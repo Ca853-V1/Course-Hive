@@ -1,28 +1,28 @@
-# Course Selling Website
+# Course Selling Website -
 
-## Objective
+## Objective:
 This project is a full-stack course selling platform where users can browse and purchase courses, while admins can manage the course catalog. It is built using the **MERN (MongoDB, Express, React.js, Node.js) stack**.
 
-## Tech Stack
+## Tech Stack:
 - **Frontend:** React.js
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB Compass
 - **Authentication:** JWT & bcrypt (for hashed passwords)
 
-## Features
-### Admin
+## Features:
+### Admin:
 - Signup/Login with authentication.
 - Add new courses.
 - View all available courses.
 - Update course details.
 
-### User
+### User:
 - Signup/Login with authentication.
 - Browse available courses.
 - Purchase courses.
 - View purchased courses.
 
-## Project Structure
+## Project Structure:
 ```
 Course-Selling-Website/
 │── server(backend)/
@@ -47,35 +47,35 @@ Course-Selling-Website/
 │── package.json (Frontend & Backend dependencies)
 ```
 
-## Installation & Usage
-### 1. Clone the repository
+## Installation & Usage:
+### 1) Clone the repository:
 ```sh
 git clone https://github.com/Ca853-V1/Course-Hive.git
 cd course-selling-website
 npm install  # Install dependencies
 ```
 
-### 2. Backend Setup
+### 2) Backend Setup:
 ```sh
 cd course-selling-website/server
 node index.js  # Start backend server
 ```
 
-### 3. Frontend Setup
+### 3) Frontend Setup:
 ```sh
 cd course-selling-website
 npm run dev  # Start frontend development server on separate terminal
 ```
 
-### 4. Environment Variables
+### 4) Environment Variables:
 Create a `.env` file in the `backend` directory with the following:
 ```
 MONGO_URI=<your_mongodb_connection_string> # Change mongoDB cluster with yours
-JWT_SECRET=<your_jwt_secret_key>
+JWT_SECRET=<your_jwt_secret_key> # Change secret key
 PORT=3000
 ```
 
-## Future Scope
+## Future Scope:
 - Add payment gateway for course purchases.
 - Introduce video streaming for courses.
 
