@@ -1,7 +1,7 @@
 # Course Selling Website
 
 ## Objective
-This project is a full-stack course selling platform where users can browse, purchase, and access courses, while admins can manage the course catalog. It is built using the **MERN (MongoDB, Express, React.js, Node.js) stack**.
+This project is a full-stack course selling platform where users can browse and purchase courses, while admins can manage the course catalog. It is built using the **MERN (MongoDB, Express, React.js, Node.js) stack**.
 
 ## Tech Stack
 - **Frontend:** React.js
