@@ -11,7 +11,7 @@ app.use(json());
 app.use("/admin", adminRouter);
 app.use("/user", userRouter);
 
-connect('mongodb+srv://barnwal301harsh:YfVOIFkhlo4EjZHl@cluster0.j6cbe.mongodb.net/CSW', {});
+connect('mongodb+srv://{/*mongoDB cluster*/}.mongodb.net/{/*mongoDB database*/}', {});
 
 app.listen(3000,()=>
 {
