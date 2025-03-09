@@ -76,7 +76,7 @@ PORT=3000
 ```
 
 ## Future Scope:
-- Add payment gateway to course purchases.
+- Add payment gateway to purchase courses.
 - Introduce video streaming for courses or to interact between user and admin.
 
 ---
