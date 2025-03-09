@@ -77,7 +77,15 @@ PORT=3000
 
 ## Future Scope:
 - Add payment gateway for course purchases.
-- Introduce video streaming for courses.
+- Introduce video streaming for courses or to interact between user and admin.
 
 ---
 
+![Screenshot (64)](https://github.com/user-attachments/assets/19664327-5c6a-47bb-aa49-6819796582aa)
+![Screenshot (68)](https://github.com/user-attachments/assets/cdb15dca-bdf5-43d6-b639-bfe4f3aaaa7b)
+![Screenshot (69)](https://github.com/user-attachments/assets/ea867371-2214-489e-bb9d-b0a946476075)
+![Screenshot (70)](https://github.com/user-attachments/assets/f357517d-b71a-4b2d-8fe1-a857d1f8ae31)
+![Screenshot (71)](https://github.com/user-attachments/assets/c6fdf263-c818-4069-a5f3-b7000eb4cdc5)
+![Screenshot (73)](https://github.com/user-attachments/assets/ad3adcd1-9feb-4095-ad06-ecd069c45d89)
+![Screenshot (74)](https://github.com/user-attachments/assets/99a9a18b-91ac-48d4-b4df-3797bbd7cd8d)
+![Screenshot (75)](https://github.com/user-attachments/assets/f8c08cc5-626a-43d1-a569-506b0951d275)
