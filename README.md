@@ -12,15 +12,15 @@ This project is a full-stack course selling platform where users can browse and 
 ## Features:
 ### Admin:
 - Signup/Login with authentication.
-- Add new courses.
+- Add new course.
 - View all available courses.
 - Update course details.
+- Delete a course.
 
 ### User:
 - Signup/Login with authentication.
 - Browse available courses.
-- Purchase courses.
-- View purchased courses.
+- Purchase courses and view them.
 
 ## Project Structure:
 ```
