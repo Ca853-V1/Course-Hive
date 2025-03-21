@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App()
 {
   return (
-    <div style={{backgroundColor: "#E3F2FD", width: "100vw", minHeight: "100vh"}}>
+    <div style={{background: "linear-gradient(to left, #ede7f6, #d1c4e9)", width: "100vw", minHeight: "100vh"}}>
       <Router>
         <Appbar/>
           <Routes>

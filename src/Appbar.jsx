@@ -26,12 +26,30 @@ function Appbar()
     if (role === "admin")
     {
         return (
-            <div style={{ display: "flex", justifyContent: "space-between", paddingTop: 15 }}>
-                <Typography variant={"h5"} style={{ fontWeight: 600 , marginLeft: 15}}>Dashboard</Typography>
+            <div style={{ display: "flex", justifyContent: "space-between", paddingTop: 10, marginBottom: 10 }}>
+                <Typography variant={"h5"} style={{ fontWeight: 600 ,
+                                                    marginLeft: 15,
+                                                    marginTop: 3,
+                                                    background: "linear-gradient(to right, #007bff, #00c6ff)",
+                                                    WebkitBackgroundClip: "text",
+                                                    WebkitTextFillColor: "transparent"}}>Dashboard</Typography>
                 <div style={{ display: "flex", paddingRight: 15 }}>
                     <Button style={{marginRight: 5}} variant="outlined" size="medium" onClick={() => navigate("/admin/courses")}>Courses</Button>
                     <Button style={{marginRight: 5}} variant="outlined" size="medium" onClick={() => navigate("/admin/addcourse")}>Add Course</Button>
-                    <Box sx={{ border: "1px solid gray", borderRadius: 20, padding: "9px 12px", marginRight: 0.5 }}> <b>ADMIN -</b> {userEmail}</Box>
+                    <Box sx={{ border: "1px solid #42A5F5", borderRadius: 20, padding: "9px 12px", marginRight: 0.5 }}>
+                        <b
+                            style={{
+                            background: "linear-gradient(to right, #007bff, #00c6ff)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                            }}
+                        > ADMIN - </b>
+                        <span style={{
+                            background: "linear-gradient(to right, #007bff, #00c6ff)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                            }}> {userEmail} </span>
+                    </Box>
                     <Button variant="outlined" size="medium" onClick={()=>
                     {
                         localStorage.clear();
@@ -45,11 +63,29 @@ function Appbar()
     {
         return (
             <div style={{ display: "flex", justifyContent: "space-between", paddingTop: 15 }}>
-                <Typography variant={"h5"} style={{ fontWeight: 600 , marginLeft: 15}}>Dashboard</Typography>
+                <Typography variant={"h5"} style={{ fontWeight: 600 ,
+                                                    marginLeft: 15,
+                                                    marginTop: 3,
+                                                    background: "linear-gradient(to right, #007bff, #00c6ff)",
+                                                    WebkitBackgroundClip: "text",
+                                                    WebkitTextFillColor: "transparent"}}>Dashboard</Typography>
                 <div style={{ display: "flex", paddingRight: 15 }}>
                     <Button style={{marginRight: 5}} variant="outlined" size="medium" onClick={() => navigate("/user/courses")}>Courses available</Button>
                     <Button style={{marginRight: 5}} variant="outlined" size="medium" onClick={() => navigate("/user/purchasedCourses")}>Courses purchased</Button>
-                    <Box sx={{ border: "1px solid gray", borderRadius: 20, padding: "9px 12px", marginRight: 0.5 }}> <b>USER -</b> {userEmail}</Box>
+                    <Box sx={{ border: "1px solid #42A5F5", borderRadius: 20, padding: "9px 12px", marginRight: 0.5 }}>
+                        <b
+                            style={{
+                            background: "linear-gradient(to right, #007bff, #00c6ff)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                            }}
+                        > USER - </b>
+                        <span style={{
+                            background: "linear-gradient(to right, #007bff, #00c6ff)",
+                            WebkitBackgroundClip: "text",
+                            WebkitTextFillColor: "transparent",
+                            }}> {userEmail} </span>
+                    </Box>
                     <Button variant="outlined" size="medium" onClick={()=>
                     {
                         localStorage.clear();
@@ -61,7 +97,11 @@ function Appbar()
     }
     return (
         <div style={{ display: "flex", justifyContent: "space-between", paddingTop: 15 }}>
-            <Typography variant={"h6"} style={{ fontWeight: 600 , marginLeft: 15}}>Course Selling Website</Typography>
+            <Typography variant={"h5"} style={{ fontWeight: 600 ,
+                                                marginLeft: 15,
+                                                background: "linear-gradient(to right, #007bff, #00c6ff)",
+                                                WebkitBackgroundClip: "text",
+                                                WebkitTextFillColor: "transparent"}}>Course Selling Website</Typography>
             <Button style={{ marginRight: 15}} variant="outlined" size="medium" onClick={() => navigate("/signup")}>Sign up</Button>
         </div>
     );

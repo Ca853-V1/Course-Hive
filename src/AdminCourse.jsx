@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Card, Button, Typography, TextField } from "@mui/material";
+import { keyframes } from "@mui/system";
 
 function AdminCourse()
 {
@@ -42,11 +43,16 @@ function AdminCourse()
 
 function GreyTopper({title})
 {
+    const fadeAnimation = keyframes`
+                            0% { color: white; }
+                            50% { color: #00BFFF; } 
+                            100% { color: cyan; }
+                            `;
     return(
         <div style={{height: 230, background: "#212121", width: "100vw", zIndex: 0, marginBottom: -50}}>
             <div style={{height: 230, display: "flex", justifyContent: "center", flexDirection: "column"}}>
                 <div>
-                    <Typography style={{color: "white", fontWeight: 600}} variant="h3" textAlign={"center"}> {title} </Typography>
+                    <Typography sx={{ fontWeight: 600, animation: `${fadeAnimation} 2s infinite`}} variant="h3" textAlign={"center"}> {title} </Typography>
                 </div>
             </div>
         </div>);
@@ -75,8 +81,8 @@ function UpdateCard({course, setCourse})
     const [image, setImageLink] = useState(course.imageLink);
     return(
         <div style={{display: "flex", justifyContent: "center", marginTop: 40}}>
-            <Card variant="outlined" style={{width: 350, padding: 20, border: "2px solid #42A5F5", borderRadius: 20}}>
-                <Typography style={{marginBottom: 10}}><b>Update Course Details:</b></Typography>
+            <Card variant="outlined" style={{width: 500, padding: 20, border: "2px solid #42A5F5", borderRadius: 20}}>
+                <Typography style={{marginBottom: 10, marginTop: -8}}><b>Update Course Details:</b></Typography>
                 <TextField value={title} style={{marginBottom: 10}} onChange={(v)=>{setTitle(v.target.value)}} fullWidth={true} label="Title" variant="outlined"/>
                 <TextField value={description} style={{marginBottom: 10}} onChange={(v)=>{setDescription(v.target.value)}} fullWidth={true} label="Description" variant="outlined"/>
                 <TextField value={price} style={{marginBottom: 10}} onChange={(v)=>{setPrice(v.target.value)}} fullWidth={true} label="Price" variant="outlined"/>

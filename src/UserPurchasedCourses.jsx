@@ -26,7 +26,7 @@ function Course_card({ course }) {
     return (
         <div style={{ display: "flex", justifyContent: "center", marginTop: 20 }}>
             <Card variant="outlined" style={{ width: 350, marginRight: 20, padding: 20, border: "2px solid #42A5F5", borderRadius: 20 }}>
-                <Typography variant="h6"><b>Title: </b>{course.title}</Typography>
+                <Typography style={{marginTop: -10}} variant="h6"><b>Title: </b>{course.title}</Typography>
                 <Typography variant="subtitle2"><b>Description: </b>{course.description}</Typography>
                 <img src={course.imageLink} alt={course.title} style={{ width: 350, marginTop: 10 }} />
             </Card>
