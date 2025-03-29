@@ -77,7 +77,7 @@ npm run dev  # Start frontend development server on separate terminal
 - Introduce video streaming for courses or to interact between user and admin.
 
 ---
-### Screenshots for reference:
+## Screenshots for reference:
 ![MongoDB Database](images/1.png)
 ![Signup Page](images/2.png)
 ![Add Course Page](images/3.png)
