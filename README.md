@@ -77,12 +77,12 @@ npm run dev  # Start frontend development server on separate terminal
 - Introduce video streaming for courses or to interact between user and admin.
 
 ---
-
-![MongoDB Database](/images/1.png)
-![Signup Page](https://raw.githubusercontent.com/Ca853-V1/Course-Hive/main/public/2.png)
-![Add Course Page](https://raw.githubusercontent.com/Ca853-V1/Course-Hive/main/public/3.png)
-![Courses Page](https://raw.githubusercontent.com/Ca853-V1/Course-Hive/main/public/4.png)
-![Update Course Page](https://raw.githubusercontent.com/Ca853-V1/Course-Hive/main/public/5.png)
-![User Purchased Courses Page](https://raw.githubusercontent.com/Ca853-V1/Course-Hive/main/public/6.png)
-![Home Page](https://raw.githubusercontent.com/Ca853-V1/Course-Hive/main/public/7.png)
+### Screenshots for reference:
+![MongoDB Database](images/1.png)
+![Signup Page](images/2.png)
+![Add Course Page](images/3.png)
+![Courses Page](images/4.png)
+![Update Course Page](images/5.png)
+![User Purchased Courses Page](images/6.png)
+![Home Page](images/7.png)
 
