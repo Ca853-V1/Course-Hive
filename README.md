@@ -78,11 +78,11 @@ npm run dev  # Start frontend development server on separate terminal
 
 ---
 
-![Screenshot (64)](https://github.com/user-attachments/assets/19664327-5c6a-47bb-aa49-6819796582aa)
-![Screenshot (84)](https://github.com/user-attachments/assets/4a89f110-fb26-470e-a68a-cee6ec744b10)
-![Screenshot (86)](https://github.com/user-attachments/assets/9f4ff8c1-cfc3-4cbe-be87-232113f6d7f9)
-![Screenshot (85)](https://github.com/user-attachments/assets/26954640-92bb-4db6-9627-cd2400ac6ecb)
-![Screenshot (92)](https://github.com/user-attachments/assets/65418bee-43bd-49fd-a646-09cce7f7d471)
-![Screenshot (93)](https://github.com/user-attachments/assets/e2b004d0-aa10-43ed-b795-0bfe9c879ed6)
-![Screenshot (94)](https://github.com/user-attachments/assets/acecbd32-a5f6-4151-b64a-8fcfc482a7f7)
+![MongoDB Database](public/1.png)
+![Signup Page](public/2.png)
+![Add Course Page](public/3.png)
+![Courses Page](public/4.png)
+![Update Course Page](public/5.png)
+![User Purchased Courses Page](public/6.png)
+![Home Page](public/7.png)
 

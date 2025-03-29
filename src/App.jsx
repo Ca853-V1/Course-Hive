@@ -1,10 +1,10 @@
-import Appbar from "./Appbar";
-import Signup from"./Signup";
-import AdminCourses from "./AdminCourses";
-import AdminAddCourse from "./AdminAddcourse";
-import AdminCourse from "./AdminCourse";
-import UserCourses from "./UserCourses";
-import UserPurchasedCourses from "./UserPurchasedCourses";
+import Appbar from "./Components/Appbar";
+import Signup from"./Components/Signup";
+import AdminCourses from "./Components/AdminCourses";
+import AdminAddCourse from "./Components/AdminAddcourse";
+import AdminCourse from "./Components/AdminCourse";
+import UserCourses from "./Components/UserCourses";
+import UserPurchasedCourses from "./Components/UserPurchasedCourses";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App()
