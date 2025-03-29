@@ -78,7 +78,7 @@ npm run dev  # Start frontend development server on separate terminal
 
 ---
 
-![MongoDB Database](public/1.png)
+![MongoDB Database](https://github.com/Ca853-V1/Course-Hive/blob/main/public/1.png)
 ![Signup Page](public/2.png)
 ![Add Course Page](public/3.png)
 ![Courses Page](public/4.png)
