@@ -83,6 +83,6 @@ npm run dev  # Start frontend development server on separate terminal
 ![Add Course Page](images/3.png)
 ![Courses Page](images/4.png)
 ![Update Course Page](images/5.png)
-![User Purchased Courses Page](images/6.png)
-![Home Page](images/7.png)
+![User Available Courses Page](images/6.png)
+![User Purchased Courses Page](images/7.png)
 

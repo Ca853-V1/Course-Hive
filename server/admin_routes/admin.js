@@ -3,6 +3,7 @@ import db from "../db/index.js";
 import pkg from 'jsonwebtoken';
 import auth from "../middleware/admin_auth.js";
 import bcrypt from 'bcrypt';
+import { z } from "zod";
 
 const { Course, Admin } = db;
 const { adminKey, adminAuthenticateJwt } = auth;
@@ -19,9 +20,21 @@ router.get('/profile', adminAuthenticateJwt, async(req, res)=>
     res.json({ username: admin.username, role: "admin" });
 });
 
+const signupInput = z.object({
+    username: z.string().email(),
+    password: z.string().min(6).max(12)
+});
+
 router.post('/signup', async(req, res)=>
 {
-    const { username, password } = req.body;
+    const parsedInput = signupInput.safeParse(req.body);
+    if(!parsedInput.success)
+    {
+        res.status(411).json({error: parsedInput.error});
+        return;
+    }
+    const username = parsedInput.data.username;
+    const password = parsedInput.data.password;
     const adminExists = await Admin.findOne({ username });
     if (adminExists)
     {
@@ -36,7 +49,14 @@ router.post('/signup', async(req, res)=>
 
 router.post('/login', async(req, res)=>
 {
-    const { username, password } = req.body;
+    const parsedInput = signupInput.safeParse(req.body);
+    if(!parsedInput.success)
+    {
+        res.status(411).json({error: parsedInput.error});
+        return;
+    }
+    const username = parsedInput.data.username;
+    const password = parsedInput.data.password;
     const admin = await Admin.findOne({ username });
     if (!admin)
     {

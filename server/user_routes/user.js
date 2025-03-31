@@ -3,10 +3,16 @@ import db from "../db/index.js";
 import pkg from 'jsonwebtoken';
 import auth from "../middleware/user_auth.js";
 import bcrypt from 'bcrypt';
+import { z } from "zod";
 
 const { Course, User } = db;
 const {userKey, userAuthenticateJwt} = auth;
 const router = Router();
+
+const signupInput = z.object({
+    username: z.string().email(),
+    password: z.string().min(6).max(12)
+})
 
 router.get('/profile', userAuthenticateJwt, async(req,res)=>
 {
@@ -21,7 +27,14 @@ router.get('/profile', userAuthenticateJwt, async(req,res)=>
 
 router.post('/signup', async(req, res)=>
 {
-    const { username, password } = req.body;
+    const parsedInput = signupInput.safeParse(req.body);
+    if(!parsedInput.success)
+    {
+        res.status(401).json({error: parsedInput.error});
+        return;
+    }
+    const username = parsedInput.data.username;
+    const password = parsedInput.data.password;
     const existingUser = await User.findOne({ username });
     if (existingUser)
     {
@@ -36,7 +49,14 @@ router.post('/signup', async(req, res)=>
 
 router.post('/login', async(req, res)=>
 {
-    const { username, password } = req.body;
+    const parsedInput = signupInput.safeParse(req.body);
+    if(!parsedInput.success)
+    {
+        res.status(401).json({error: parsedInput.error});
+        return;
+    }
+    const username = parsedInput.data.username;
+    const password = parsedInput.data.password;
     const user = await User.findOne({ username });
     if (!user)
     {
