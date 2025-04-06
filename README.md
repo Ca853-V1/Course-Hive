@@ -25,23 +25,24 @@ This project is a full-stack course selling platform where users can browse and 
 ## Project Structure:
 ```
 Course-Selling-Website/
-│── server(backend)/
+│── server (backend)/
 │   ├── db/             # Database models
 │   ├── admin_routes/   # Express routes (admin)
 │   ├── user_routes/    # Express routes (user)
 │   ├── middleware/     # Authentication & validation
 │   ├── index.js        # Entry point for backend
 │
-│── src(frontend)/
-│   ├── AdminAddCourse.jsx/         # Add course component for admin
-│   ├── AdminCourse.jsx/            # Edit course component for admin
-│   ├── AdminCourses.jsx/           # View all courses component for admin
-│   ├── Appbar.jsx/                 # Top app bar component
-│   ├── Signup.jsx/                 # Signip/login component
-│   ├── UserCourses.jsx/            # View all courses component for user
-│   ├── UserPurchasedCourses.jsx/   # Purchase courses and view them component for user
-│   ├── App.jsx                     # Main app component
-│   ├── main.jsx                    # Entry point for frontend
+│── client (frontend)/
+│   ├── Components/
+│   │    ├── AdminAddCourse.jsx/         # Add course component for admin
+│   │    ├── AdminCourse.jsx/            # Edit course component for admin
+│   │    ├── AdminCourses.jsx/           # View all courses component for admin
+│   │    ├── Appbar.jsx/                 # Top app bar component
+│   │    ├── Signup.jsx/                 # Signip/login component
+│   │    ├── UserCourses.jsx/            # View all courses component for user
+│   │    ├── UserPurchasedCourses.jsx/   # Purchase courses and view them component for user
+│   ├── App.jsx          # Main app component
+│   ├── main.jsx         # Entry point for frontend
 │
 │── README.md
 │── package.json (Frontend & Backend dependencies)
@@ -70,13 +71,12 @@ npm run dev  # Start frontend development server on separate terminal
 ### 4) Environment Variables:
 - Change mongoDB cluster and port number as per your requirement in the index.js file inside server.
 - Change the secret key for authentication inside the middleware folder inside the server.
-```
+
 
 ## Future Scope:
 - Add payment gateway to purchase courses.
 - Introduce video streaming for courses or to interact between user and admin.
 
----
 ## Screenshots for reference:
 ![MongoDB Database](images/1.png)
 ![Signup Page](images/2.png)
@@ -85,4 +85,3 @@ npm run dev  # Start frontend development server on separate terminal
 ![Update Course Page](images/5.png)
 ![User Available Courses Page](images/6.png)
 ![User Purchased Courses Page](images/7.png)
-
